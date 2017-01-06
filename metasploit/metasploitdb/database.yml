@@ -1,0 +1,14 @@
+# Development Database
+development: &pgsql
+  adapter: postgresql
+  database: msf
+  username: msf
+  password: msf
+  host: localhost
+  port: 5432
+  pool: 5
+  timeout: 5
+
+# Production database -- same as dev
+production: &production
+  <<: *pgsql
