@@ -4,4 +4,5 @@
 ## current dockerfiles
 
 - [metasploit](metasploit/)
+- [rainbowstream](rainbowstream/)
 
