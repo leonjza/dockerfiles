@@ -15,7 +15,11 @@ RUN apt-get update && \
     libjpeg-dev \
     libfreetype6 \
     libfreetype6-dev \
-    zlib1g-dev
+    zlib1g-dev && \
+
+    # cleanup time!
+    apt-get clean && \
+    rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
 # install reainbowstream
 RUN pip3 install rainbowstream
